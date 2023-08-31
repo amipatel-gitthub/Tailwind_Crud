@@ -1,0 +1,166 @@
+/* ============ ** navbar dropdown ** ============ */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* ================= ** Main page background css ** ================== */
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    background: #4b80d0;
+    overflow: hidden;
+  }
+  section .air {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px;
+  }
+  section .air.air1 {
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2 {
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3 {
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4 {
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: -1000px;
+    }
+  }
+  
+  /* ================= ** main page table css ** ======================= */
+  
+  .tbl-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  table.neumorphic {
+    width: 600px;
+    border-spacing: 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(112, 137, 187, 0.6); */
+  }
+  table.neumorphic tbody {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6);
+  }
+  table.neumorphic th {
+    padding: 7px;
+  }
+  
+  table.neumorphic > tbody > tr > td {
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  table.neumorphic > tbody > tr:hover {
+    padding: 20px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.6);
+  }
+  
+  table.neumorphic tr td:first-child::before {
+    content: "";
+    position: absolute;
+    padding: 7px;
+    top: 0;
+    left: -5000px;
+    width: 10000px;
+    height: 100%;
+    z-index: -10;
+  }
+  
+  table.neumorphic td:hover::after {
+    content: "";
+    position: absolute;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.6);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* =============== ** css of All page Bg ** ====================== */
+  
+  html,
+  body {
+    width: 100%;
+    height: 90vh;
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #e8cbc0,#636fa4);
+    background-color: #d4809c;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-design {
+    border: 1px solid black;
+    background-color: whitesmoke;
+  }
+  
